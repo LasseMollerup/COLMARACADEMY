@@ -177,3 +177,33 @@ padding: 0.5rem 0rem;
 text-decoration: none;
 color: hsla(198, 62%, 44%, 1);
 }
+
+/*  Courses Section */
+
+.courses {
+  padding-top: 2rem;
+  align-items: center;
+  background-color: hsla(198, 1%, 82%, 0.7);
+}
+
+.boxes {
+  flex-wrap: wrap;
+  padding: 2rem 4.5rem;
+
+}
+.box {
+  width: 30%;
+  margin: 1rem 1rem;
+}
+.box img {
+  width: 100%;
+  height: auto;
+}
+.box-content {
+  height: 8rem;
+  padding: 1.5rem 1rem 0 1rem;
+  background-color: hsla(360, 100%, 100%, 1);
+}
+.box-content h4, h5, p {
+  margin: 0.7rem 0;
+}
