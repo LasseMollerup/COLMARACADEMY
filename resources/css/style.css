@@ -74,3 +74,106 @@ header {
 .navigation-2 {
   display: none;
 }
+
+/* Banner */
+
+.banner {
+position: relative;  /* to comprehend for the fixed header */
+top: 4rem;
+background-color: hsla(198, 1%, 82%, 0.7);
+align-items: center;
+}
+
+/* Banner image  */
+.image {
+width: 60%;
+padding: 2rem 1.5rem;
+}
+.image img {
+height: 100%;
+width: 100%;
+}
+
+/* Banner Content */
+
+.banner-content {
+height: 100%;
+width: 40%;
+}
+.learn {
+width: 80%;
+}
+.learn h2 {
+margin: 1.75rem 0rem;
+}
+.btn {
+text-align: center;
+padding: 0.5rem 0;
+width: 100%;
+color: hsla(360, 100%, 100%, 1);
+background-color: hsla(198, 1%, 24%, 1);
+}
+
+/* Main Section  */
+
+.main {
+margin-top: 2rem;
+padding-top: 3rem;
+height: 40rem;
+}
+
+  /* Left side of Main */
+.left {
+width: 60%;
+height: 100%;
+padding: 2rem 1.5rem;
+padding: 0 0;
+}
+.left img {
+width: 100%;
+height: auto;
+margin-top: 1rem;
+}
+.left-content {
+min-height: 100%;
+padding: 2rem 0 1rem 0;
+}
+.left-content p {
+  padding: 1.5rem 0;
+}
+.left-content p:last-child {
+  padding: 0 0 2rem 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Right side of Main */
+.right {
+width: 40%;
+height: 100%;
+padding: 0 0;
+}
+.info {
+padding: 1rem 1rem;
+max-height: 100%;
+}
+.info img {
+width: 35%;
+height: auto;
+}
+.right .info:last-child {
+background-color: hsla(198, 1%, 82%, 0.7);
+}
+.information {
+width: 65%;
+height: 100%;
+padding-left: 1rem;
+justify-content: center;
+}
+.information p {
+padding: 0.5rem 0rem;
+}
+.information a {
+text-decoration: none;
+color: hsla(198, 62%, 44%, 1);
+}
