@@ -40,3 +40,37 @@ h4 {
 font-size: 1.125rem;
 font-weight: 700;
 }
+
+
+/*    Header and Nav-bar   */
+header {
+  height: 4rem;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  background-color: hsla(360, 100%, 100%, 1);
+}
+.logo {
+  margin-left: 1.5rem;
+  width: 25%;
+}
+.logo div {
+  height: 2rem;
+}
+.logo div span:first-child {
+  font-weight: 900;
+}
+.navigation {
+  width: 35%;
+  justify-content: flex-end;
+  margin-right: 1.5rem;
+}
+.desktop li {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+.navigation-2 {
+  display: none;
+}
