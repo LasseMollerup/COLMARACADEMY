@@ -1,0 +1,42 @@
+/* Universal Styles */
+html {
+font-size: 16px;
+font-family: "Roboto", sans-serif;
+font-weight: 100;
+color: hsla(198, 0%, 43%, 1);
+}
+
+/* Inline-flex align center */
+.iflex {
+display: inline-flex;
+align-items: center;
+}
+
+/* Inline flex align center with flex-direction column */
+.iflexcol {
+display: inline-flex;
+flex-direction: column;
+}
+
+body {
+background-color: hsla(360, 100%, 100%, 1);
+}
+h1, h2, h3, h4 {
+color: hsla(198, 1%, 19%, 1);
+}
+
+h1 {
+font-size: 3rem;
+font-weight: 900;
+}
+h2 {
+font-size: 2rem;
+font-weight: 900;
+}
+h3 {
+font-size: 1.75rem;
+}
+h4 {
+font-size: 1.125rem;
+font-weight: 700;
+}
