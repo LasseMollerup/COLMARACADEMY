@@ -249,3 +249,18 @@ background-color: hsla(198, 1%, 82%, 0.7);
 .thesis-box-content {
 width: 65%;
 }
+
+
+/*    Footer  */
+footer {
+  height: 4rem;
+  border-top: 1px solid hsla(198, 1%, 82%, 0.7);
+  justify-content: space-between;
+}
+footer div {
+  padding: 1rem 1.5rem;
+}
+footer div a {
+  text-decoration: none;
+  color: hsla(198, 0%, 43%, 1);
+}
