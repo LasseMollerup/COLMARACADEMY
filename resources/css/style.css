@@ -117,7 +117,7 @@ background-color: hsla(198, 1%, 24%, 1);
 /* Main Section  */
 
 .main {
-margin-top: 2rem;
+margin: 2rem 0 0 1.5rem;
 padding-top: 3rem;
 height: 40rem;
 }
@@ -139,10 +139,10 @@ min-height: 100%;
 padding: 2rem 0 1rem 0;
 }
 .left-content p {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 0 0;
 }
 .left-content p:last-child {
-  padding: 0 0 2rem 0;
+  padding: 0 0 3rem 0;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -151,7 +151,7 @@ padding: 2rem 0 1rem 0;
 .right {
 width: 40%;
 height: 100%;
-padding: 0 0;
+padding: 2rem 1.5rem;
 }
 .info {
 padding: 1rem 1rem;
@@ -201,7 +201,7 @@ color: hsla(198, 62%, 44%, 1);
 }
 .box-content {
   height: 8rem;
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 1rem 0.5rem 1.5rem 1rem;
   background-color: hsla(360, 100%, 100%, 1);
 }
 .box-content h4, h5, p {
@@ -230,7 +230,7 @@ height: auto;
 align-self: center;
 }
 .thesis-left h3 {
-margin: 0.5rem;
+margin-top: 0.5rem;
 }
 .thesis-right {
 width: 40%;
