@@ -26,7 +26,7 @@ flex-direction: column;
 
 body {
 background-color: hsla(360, 100%, 100%, 1);
-transition: all 250ms linear 100ms;
+transition: all 350ms linear 100ms;
 }
 h1, h2, h3, h4 {
 color: hsla(198, 1%, 19%, 1);
@@ -85,7 +85,7 @@ header {
 .desktop li:hover {
   color: hsla(360, 100%, 100%, 1);
   background-color: hsla(180, 1%, 39%, 0.9);
-  padding: 0.5rem;
+  padding: 0.3rem 0.4rem;
   border-radius: 10%;
 }
 .desktop li:active {
@@ -95,7 +95,23 @@ header {
 .navigation-2 {
   display: none;
 }
+/*    Media screens     */
+@media only screen and (max-width: 930px) {
+  .desktop li {
+    font-size: 1rem;
+  }
 
+  @media only screen and (max-width: 930px) {
+  .logo div span {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .logo div span {
+    display: none;
+  }
+}
+}
 @media only screen and (max-width: 510px) {
 
   .header {
@@ -146,6 +162,19 @@ width: 75%;
 .learn h2 {
 margin: 1.75rem 0rem;
 }
+@media only screen and (max-width: 930px) {
+  .learn h1 {
+    font-size: 2rem}
+    .learn h2 {
+      font-size: 1.5rem}
+}
+@media only screen and (max-width: 690px) {
+  .learn h1 {
+    font-size: 1.5rem}
+    .learn h2 {
+      font-size: 1rem}
+}
+
 .btn {
 text-align: center;
 padding: 0.5rem 0;
@@ -185,7 +214,7 @@ padding-top: 3rem;
 height: 40rem;
 align-items: flex-start;
 }
-
+/*    Media Screens for Main    */
 @media only screen and (max-width: 510px) {
   .main {
     margin: 2rem 0 3rem 0;
@@ -205,14 +234,14 @@ height: auto;
 .left-content {
 padding: 2rem 0 0 0;
 }
-.ema {
-  padding-top: 4rem;
+.left-content p {
+  padding: 1.5rem 0;
 }
-.left-content p:last-child {
-  font-size: 0.8rem;
-  font-weight: 700;
+.ema {
+  font-weight: 900;
 }
 
+/*    Media Screens for left     */
 @media only screen and (max-width: 510px) {
   .left {
   display: none;
@@ -260,6 +289,8 @@ color: hsla(198, 62%, 44%, 1);
   position: relative;
   top: 0.1rem; 
 } 
+
+/*    Media Screens for Rigt side of Main     */
 @media only screen and (max-width: 510px) {
 
   .right, .info, .info .mobile-img, .information {
@@ -316,6 +347,10 @@ color: hsla(198, 62%, 44%, 1);
   width: 30%;
   margin: 1rem 1rem;
 }
+.box:hover {
+  background-color: hsla(198, 1%, 82%, 0.7);
+  border: 1px solid hsla(0, 0%, 41%, 1);
+} 
 .box:active {
   position: relative;
   top: 0.1rem; 
@@ -336,6 +371,28 @@ color: hsla(198, 62%, 44%, 1);
 .box-content i {
   height: 1rem;
 }
+
+/*    Media screens   */
+
+@media only screen and (max-width: 1126px) {
+  .boxes {
+    justify-content: center;
+  }
+  .box {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .box-content h4, .box-content h5, .box-content p {
+    font-size: 0.9rem;
+  }
+  .box-content {
+    padding: 0.2rem;
+    height: 7.5rem;
+  }
+
+}
+
 
 @media only screen and (max-width: 510px) {
 
@@ -360,7 +417,6 @@ color: hsla(198, 62%, 44%, 1);
     padding: 0;
     margin-bottom: 2rem;
   }
-
   .box-mobile .box-content-mobile {
     justify-content: left;
     width: 90%;
@@ -403,7 +459,7 @@ align-self: center;
 margin-top: 0.5rem;
 }
 .thesis-left p {
-padding-right: 2rem;
+padding: 1rem 2rem 0 0;
 }
 
     /* Left Section */
@@ -424,6 +480,16 @@ background-color: hsla(198, 1%, 82%, 0.7);
 .thesis-box-content {
 width: 65%;
 }
+/*    Media Screens for Thesis    */
+@media only screen and (max-width: 930px) {
+  .thesis-box-content h3 {
+    font-size: 1.1rem;
+  }
+  .thesis-box-content p {
+    font-size: 0.9rem;
+  }
+}
+
 @media only screen and (max-width: 510px) {
   .thesis-right, .thesis-left h3, .thesis-left p {
     display: none;
