@@ -147,7 +147,6 @@ background-color: hsla(198, 1%, 24%, 1);
       flex-direction: column;
       margin-top: 2rem;
       align-content: center;
-
     }
     .image, .banner-content {
       width: 100%;
@@ -157,7 +156,7 @@ background-color: hsla(198, 1%, 24%, 1);
     }
     .banner-content  {
       margin-top: 0;
-      padding: 2rem 1rem;
+      padding: 2rem 0rem;
       align-items: center;
   }
 }
@@ -170,6 +169,7 @@ padding-top: 3rem;
 height: 40rem;
 align-items: flex-start;
 }
+
 @media only screen and (max-width: 510px) {
   .main {
     margin: 2rem 0 3rem 0;
@@ -206,15 +206,18 @@ padding: 2rem 0 0 0;
 /* Right side of Main */
 .right {
 width: 40%;
-padding: 1rem 0 0 1.5rem;
+margin: 1rem 0 0 1.5rem;
 }
 .info {
-padding: 1rem 1rem;
+padding: 1rem 0rem;
 max-height: 100%;
 }
 .info img {
 width: 35%;
 height: auto;
+}
+.mobile-img {
+  display: none;
 }
 .right .info:first-child {
   padding-top: 0;
@@ -239,27 +242,34 @@ color: hsla(198, 62%, 44%, 1);
 
 @media only screen and (max-width: 510px) {
 
-
-  .right, .info, .info img, .information {
+  .right, .info, .info .mobile-img, .information {
     width: 100%;
     height: auto;
     padding: 0;
+    margin: 0;
   }
 
   .info {
     flex-direction: column;
-    padding: 1rem 1rem 0 1rem;
+    padding-top: 1rem;
   }
-  .info img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    margin-top: 1rem;
+  .desktop-img {
+    display: none;
   }
-  .information {
-    padding: 4rem 0rem 2rem 0;
+  
+  .info .mobile-img {
+    display: block;
+    width: 95%;
   }
+  .information  {
+    padding: 4rem 0 2rem 0;
+  }
+  .information h4, .information p, .information a {
+    padding: 0 1rem 0 2rem;
+  }
+  .information p {
+    margin: 1rem 0;
+    }
 
   .right .info:last-child {
     background-color: hsla(360, 100%, 100%, 1);
@@ -388,11 +398,8 @@ background-color: hsla(198, 1%, 82%, 0.7);
 width: 65%;
 }
 @media only screen and (max-width: 510px) {
-  .thesis-right, .thesis-left h3, p {
+  .thesis-right, .thesis-left h3, .thesis-left p {
     display: none;
-  }
-  .thesis {
-    border: 2px dotted blue;
   }
   .thesis-left {
     width: 100%;
@@ -402,8 +409,6 @@ width: 65%;
     margin: 0rem;
 
   }
-
-
 }
 
 
