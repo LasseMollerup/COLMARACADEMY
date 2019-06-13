@@ -8,6 +8,11 @@ color: hsla(360, 100%, 100%, 1);
 /*    Color Palete chosen for my projects      */
 colors {
 
+  color: hsl(208, 50%, 19%);  /* Header h2, a    */
+  color: hsla(204, 49%, 14%, 1);  /* , h1 */
+  color: hsla(198, 12%, 78%, 1);  /* Nav Hover, info:hover, .courses */ 
+  color: hsla(22, 23%, 29%, 1);   /*  h3, h4, span firstchild */
+  color: hsla(203, 31%, 57%, 1);  /* span btn-background, main-back     */
 
 } 
 /* To make my code shorter I have chosen to create the following, three different class selectors for the use of flex, inline-flex and inline-flex with flex-direction column. */
@@ -162,7 +167,6 @@ width: 100%;
 .image {
 width: 60%;
 padding: 2rem 1.5rem;
-border: 3px solid red;
 }
 .image img {
 height: 100%;
@@ -219,7 +223,7 @@ background-color: hsla(203, 31%, 57%, 1);
       align-content: center;
       top: 2rem; /* to comprehend for the fixed header */
       }  
-    }
+    
     .image, .banner-content {
       width: 100%;
   }
@@ -302,9 +306,11 @@ border: 0.2rem solid hsla(360, 100%, 100%, 1);
 .right .info:first-child {
   padding-top: 0;
 }
-.right .info:hover {
-background-color: hsla(198, 12%, 78%, 1);
+.right .info:hover, .right .info:hover img {
+  background-color: hsla(198, 12%, 78%, 1);
+  opacity: 0.85;
 }
+
 .right .info:active {
   position: relative;
   top: 0.1rem; 
@@ -391,9 +397,13 @@ color: hsla(207, 49%, 19%, 1);
   margin: 1rem 1rem;
   border: 0.2rem solid hsla(360, 100%, 100%, 1);
 }
-.box:hover {
+.box:hover, .box:hover .box-content {
   border: 0.2rem solid hsla(203, 31%, 57%, 1);
+  background-color: hsla(203, 31%, 57%, 0.8);
 } 
+.box:hover img {
+  opacity: 0.8;
+}
 .box:active {
   position: relative;
   top: 0.1rem; 
@@ -470,17 +480,23 @@ color: hsla(207, 49%, 19%, 1);
     margin-bottom: 2rem;
   }
   .box-mobile .box-content-mobile {
-    justify-content: left;
+    justify-content: center;
     width: 90%;
     padding: 0;
-    background-color: hsla(198, 1%, 82%, 0.7);
+    background-color: hsla(203, 31%, 57%, 1);
     margin: 0.25rem;
   }
   .box-mobile .box-content-mobile h4 {
     height: 100%;
     margin: 1rem 1rem 1.5rem 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-shadow: hsla(360, 100%, 100%, 1) 2px 2px 2px;
   }
+  .box-content-mobile:active {
+    position: relative;
+    top: 0.1rem; 
+    right: 0.2rem;
+  } 
 }
 
 
