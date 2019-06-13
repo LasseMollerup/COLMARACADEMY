@@ -478,6 +478,7 @@ color: hsla(207, 49%, 19%, 1);
     height: auto;
     padding: 0;
     margin-bottom: 2rem;
+    transition: all 0ms linear 0ms;
   }
   .box-mobile .box-content-mobile {
     justify-content: center;
@@ -497,6 +498,11 @@ color: hsla(207, 49%, 19%, 1);
     top: 0.1rem; 
     right: 0.2rem;
   } 
+  .fa-pen-fancy, .fa-paint-brush, .fa-desktop, .fa-digital-tachograph, .fa-user-tie, .fa-bullhorn {
+    align-self: center;
+    color: hsla(22, 23%, 29%, 1);
+    text-shadow: hsla(360, 100%, 100%, 1) 2px 2px 2px;
+  }
 }
 
 
