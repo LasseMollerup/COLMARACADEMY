@@ -143,6 +143,9 @@ header {
     width: 90%;
     justify-content: space-between;
   }
+  .navigation-2 .mobile img {
+    height: 2.7rem;
+  }
 }
 
 /* Banner */
@@ -152,12 +155,14 @@ position: relative;  /* to comprehend for the fixed header */
 top: 4rem;
 background-color: hsla(360, 100%, 100%, 1);
 align-items: center;
+width: 100%;
 }
 
 /* Banner image  */
 .image {
 width: 60%;
 padding: 2rem 1.5rem;
+border: 3px solid red;
 }
 .image img {
 height: 100%;
@@ -212,6 +217,8 @@ background-color: hsla(203, 31%, 57%, 1);
       flex-direction: column;
       margin-top: 2rem;
       align-content: center;
+      top: 2rem; /* to comprehend for the fixed header */
+      }  
     }
     .image, .banner-content {
       width: 100%;
@@ -385,7 +392,6 @@ color: hsla(207, 49%, 19%, 1);
   border: 0.2rem solid hsla(360, 100%, 100%, 1);
 }
 .box:hover {
-  background-color: hsla(207, 49%, 19%, 1);
   border: 0.2rem solid hsla(203, 31%, 57%, 1);
 } 
 .box:active {
