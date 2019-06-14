@@ -280,7 +280,7 @@ header {
 /*    Media Screens for Main    */
 
 /*    min-width 511 and max-width: 730px    */
-@media only screen and (min-width: 511px) and (max-width: 730px) {
+@media only screen and (min-width: 481px) and (max-width: 730px) {
   .main {
     padding-bottom: 4rem;
   }
@@ -625,6 +625,27 @@ video {
     font-size: 0.9rem;
   }
 }
+
+/*    min-width: 481 to max-width: 929px    */
+@media only screen and (min-width: 481px) and (max-width: 929px) {
+  .thesis {
+    
+    border: 1px solid red;
+  }
+  
+  .thesis-left {
+    border: 1px solid pink;
+  }
+
+  .thesis-right {
+  
+    border: 1px dotted green;
+  }
+  .thesis-box {
+    aborder: 1px dotted yellow;
+  }
+}
+
 
 /*    max-width: 480px    */
 @media only screen and (max-width: 480px) {
