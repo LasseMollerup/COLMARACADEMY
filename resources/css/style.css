@@ -627,22 +627,19 @@ video {
 }
 
 /*    min-width: 481 to max-width: 929px    */
-@media only screen and (min-width: 481px) and (max-width: 929px) {
-  .thesis {
-    
-    border: 1px solid red;
+@media only screen and (min-width: 481px) and (max-width: 929px) {  
+    .thesis-box {
+    flex-direction: column;
   }
-  
-  .thesis-left {
-    border: 1px solid pink;
+  .thesis-box-content{
+  width: 90%;
+  } 
+  .thesis-box img {
+    width: 50%;
+    margin: 0;
   }
-
-  .thesis-right {
-  
-    border: 1px dotted green;
-  }
-  .thesis-box {
-    aborder: 1px dotted yellow;
+  .thesis-box p {
+    padding: 0.5rem 0;
   }
 }
 
