@@ -1,66 +1,61 @@
-/* Universal Styles */
+/*    Universal Styles    */
 html {
-font-size: 16px;
-font-family: "Roboto", sans-serif;
-font-weight: 100;
-color: hsla(360, 100%, 100%, 1);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: hsla(360, 100%, 100%, 1);
 }
-/*    Color Palete chosen for my projects      */
+/*    Color Palete chosen for my projects   */
 colors {
-
   color: hsl(208, 50%, 19%);  /* Header h2, a    */
   color: hsla(204, 49%, 14%, 1);  /* , h1 */
   color: hsla(198, 12%, 78%, 1);  /* Nav Hover, info:hover, .courses */ 
   color: hsla(22, 23%, 29%, 1);   /*  h3, h4, span firstchild */
   color: hsla(203, 31%, 57%, 1);  /* span btn-background, main-back     */
-
 } 
 /* To make my code shorter I have chosen to create the following, three different class selectors for the use of flex, inline-flex and inline-flex with flex-direction column. */
-/*  normal flex */
+/*    normal flex   */
 .flex {
   display: flex;
 }
-
-/* Inline-flex align center */
+/*    Inline-flex align center    */
 .iflex {
-display: inline-flex;
-align-items: center;
+  display: inline-flex;
+  align-items: center;
 }
-
-/* Inline flex align center with flex-direction column */
+/*    Inline flex align center with flex-direction column   */
 .iflexcol {
-display: inline-flex;
-flex-direction: column;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 body {
-background-color: hsla(360, 100%, 100%, 1);
-transition: all 350ms linear 1ms;
-}
-h2, h3, h4 {
-  color: hsla(22, 23%, 29%, 1);
+  background-color: hsla(360, 100%, 100%, 1);
+  transition: all 350ms linear 1ms;
 }
 
 h1 {
-font-size: 3rem;
-font-weight: 900;
-color: hsla(204, 49%, 14%, 1);
+  font-size: 3rem;
+  font-weight: 900;
+  color: hsla(204, 49%, 14%, 1);
 }
 h2 {
-font-size: 2rem;
-font-weight: 900;
-color: hsla(207, 49%, 19%, 1);
+  font-size: 2rem;
+  font-weight: 900;
+  color: hsla(207, 49%, 19%, 1);
 }
 h3 {
-font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 h4 {
-font-size: 1.125rem;
-font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+h3, h4 {
+  color: hsla(22, 23%, 29%, 1);
 }
 
-
-/*    Header and Nav-bar   */
+/*    Header and Nav-bar    */
 header {
   height: 4rem;
   width: 100%;
@@ -85,7 +80,7 @@ header {
 .logo div span:first-child {
   font-weight: 900;
   color: hsla(22, 23%, 29%, 1);
-  text-shadow: hsla(360, 100%, 100%, 1) 1px 1px 1px;
+  text-shadow: hsla(360, 100%, 100%, 1) 3px 0px 2px;
 }
 .navigation {
   justify-content: flex-end;
@@ -108,8 +103,9 @@ header {
   display: none;
 }
 
-
 /*    Media screens     */
+
+/*    max-width: 930px    */
 @media only screen and (max-width: 930px) {
   .logo {
     width: 10%;
@@ -121,20 +117,20 @@ header {
     font-size: 1.2rem;
   }
 }
-
+/*    max-width: 670px    */
 @media only screen and (max-width: 670px) {
   .logo div span {
     display: none;
   }
 }
-
+/*    max-width: 670px    */
 @media only screen and (max-width: 540px) {
   .desktop li {
     font-size: 0.9rem;
   }
 }
-@media only screen and (max-width: 510px) {
-
+/*    max-width: 480px    */
+@media only screen and (max-width: 480px) {
   .header {
     max-width: 100%;
   }
@@ -181,44 +177,44 @@ header {
 }
 
 
-/* Banner */
+/*    Banner    */
 
 .banner {
-position: relative;  /* to comprehend for the fixed header */
-top: 4rem;
-align-items: center;
-width: 100%;
-margin-bottom: 2rem;
+  position: relative; /* to comprehend for the fixed header */
+  top: 4rem;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-/* Banner image  */
+/*    Banner image    */
 .image {
-width: 60%;
-padding: 2rem 1.5rem;
+  width: 60%;
+  padding: 2rem 1.5rem;
 }
 .image img {
-height: 100%;
-width: 100%;
-}
+  height: 100%;
+  width: 100%;
+  }
 
-/* Banner Content */
+/*    Banner Content    */
 
 .banner-content {
-height: 100%;
-width: 40%;
+  height: 100%;
+  width: 40%;
 }
 .learn {
-width: 75%;
+  width: 75%;
 }
 .learn h2 {
-margin: 1.75rem 0rem;
+  margin: 1.75rem 0rem;
 }
 .btn {
-text-align: center;
-padding: 0.5rem 0;
-width: 100%;
-color: hsla(360, 100%, 100%, 1);
-background-color: hsla(203, 31%, 57%, 1);
+  text-align: center;
+  padding: 0.5rem 0;
+  width: 100%;
+  color: hsla(360, 100%, 100%, 1);
+  background-color: hsla(203, 31%, 57%, 1);
 }
 .btn:hover {
   background-color: hsla(204, 49%, 14%, 1);
@@ -227,81 +223,88 @@ background-color: hsla(203, 31%, 57%, 1);
   position: relative;
   top: 0.1rem; 
 } 
+
 /*    Media Screens for Banner    */
 
+/*    max-width: 930px    */
 @media only screen and (max-width: 930px) {
   .learn h1 {
     font-size: 2rem}
   .learn h2 {
-      font-size: 1.5rem}
+    font-size: 1.5rem}
 }
+/*    max-width: 730px    */
 @media only screen and (max-width: 730px) {
   .learn h1 {
     font-size: 1.7rem}
   .learn h2 {
-      font-size: 1.2rem}
+    font-size: 1.2rem}
 }
+/*    max-width: 690px    */
 @media only screen and (max-width: 690px) {
   .learn h1 {
-    font-size: 1.5rem}
-    .learn h2 {
-      font-size: 1rem}
+    font-size: 1.4rem}
+  .learn h2 {
+    font-size: 1rem}
 }
-@media only screen and (max-width: 510px) {
-    .banner {
-      flex-direction: column;
-      margin-top: 2rem;
-      align-content: center;
-      top: 2rem; /* to comprehend for the fixed header */
-      }  
-    
-    .image, .banner-content {
-      width: 100%;
+/*    max-width: 480px    */
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    margin-top: 2rem;
+    align-content: center;
+    top: 2rem; /* to comprehend for the fixed header */
+  }  
+  .image, .banner-content {
+    width: 100%;
   }
-    .image {
-      padding: 0;
-    }
-    .banner-content  {
-      margin-top: 0;
-      padding: 2rem 0rem;
-      align-items: center;
+  .image {
+    padding: 0;
+  }
+  .banner-content  {
+    margin-top: 0;
+    padding: 2rem 0rem;
+    align-items: center;
   }
 }
 
-/* Main Section  */
+/*    Main Section    */
 
 .main {
-margin-top: 2rem;
-padding-top: 3rem;
-height: 40rem;
-align-items: flex-start;
-background-color: hsla(203, 31%, 57%, 1);
+  margin-top: 2rem;
+  padding-top: 3rem;
+  height: 40rem;
+  align-items: flex-start;
+  background-color: hsla(203, 31%, 57%, 1);
 }
 /*    Media Screens for Main    */
+
+/*    min-width 511 and max-width: 730px    */
 @media only screen and (min-width: 511px) and (max-width: 730px) {
   .main {
     padding-bottom: 4rem;
   }
 }
-@media only screen and (max-width: 510px) {
+/*    max-width: 480px    */
+@media only screen and (max-width: 480px) {
   .main {
     margin: 2rem 0 2rem 0;
     height: auto;
   }
 }
-  /* Left side of Main */
+/*    Left side of Main   */
 .left {
-width: 60%;
-height: 100%;
-padding: 1rem 0 0 1rem;
+  width: 60%;
+  height: 100%;
+  padding: 1rem 0 0 1rem;
 }
 .left img {
-width: 100%;
-height: auto;
-border: 0.3rem solid hsla(360, 100%, 100%, 1);
+  width: 100%;
+  height: auto;
+  border: 0.3rem solid hsla(360, 100%, 100%, 1);
 }
 .left-content {
-padding: 2rem 0 0 0;
+  padding: 2rem 0 0 0;
 }
 .left-content p {
   padding: 1rem 0;
@@ -310,8 +313,10 @@ padding: 2rem 0 0 0;
   font-weight: 900;
 }
 
-/*    Media Screens for left     */
-@media only screen and (max-width: 510px) {
+/*    Media Screens for left    */
+
+/*    max-width: 480px    */
+@media only screen and (max-width: 480px) {
   .left {
   display: none;
   }
@@ -319,17 +324,17 @@ padding: 2rem 0 0 0;
 
 /* Right side of Main */
 .right {
-width: 40%;
-margin: 1rem 0 0 1.5rem;
+  width: 40%;
+  margin: 1rem 0 0 1.5rem;
 }
 .info {
-padding: 1rem 0rem;
-max-height: 100%;
+  padding: 1rem 0rem;
+  max-height: 100%;
 }
 .info img {
-width: 35%;
-height: auto;
-border: 0.2rem solid hsla(360, 100%, 100%, 1);
+  width: 35%;
+  height: auto;
+  border: 0.2rem solid hsla(360, 100%, 100%, 1);
 }
 .mobile-img {
   display: none;
@@ -341,7 +346,6 @@ border: 0.2rem solid hsla(360, 100%, 100%, 1);
   background-color: hsla(198, 12%, 78%, 1);
   opacity: 0.85;
 }
-
 .right .info:active {
   position: relative;
   top: 0.1rem; 
@@ -359,7 +363,6 @@ padding: 0.5rem 0rem;
 text-decoration: none;
 color: hsla(207, 49%, 19%, 1);
 }
-
 .information a:active {
   position: relative;
   top: 0.1rem; 
@@ -367,6 +370,7 @@ color: hsla(207, 49%, 19%, 1);
 
 /*    Media Screens for Rigt side of Main     */
 
+/*    max-width: 730px    */
 @media only screen and (max-width: 730px) {
   .info {
     flex-direction: column;
@@ -388,12 +392,17 @@ color: hsla(207, 49%, 19%, 1);
   
 }
 
-@media only screen and (max-width: 510px) {
+/*    max-width: 480px    */
+@media only screen and (max-width: 480px) {
   .right, .info, .info .mobile-img, .information {
     width: 100%;
     height: auto;
     padding: 0;
     margin: 0;
+  }
+  .info img {
+    border-left: none;
+    border-right: none;
   }
   .information  {
     padding: 4rem 0 2rem 0;
@@ -403,11 +412,11 @@ color: hsla(207, 49%, 19%, 1);
   }
   .information p {
     margin: 1rem 0;
-    }
   }
+}
 
 
-/*  Courses Section */
+/*    Courses Section   */
 .courses {
   align-items: center;
   background-color: hsla(198, 12%, 78%, 1);
@@ -458,6 +467,13 @@ color: hsla(207, 49%, 19%, 1);
 
 /*    Media screens   */
 
+/*
+With the many boxes in the 
+courses section, I have added some
+extra max-withs to make the box-wrap
+smoother */
+
+/*    max-width: 1126px    */
 @media only screen and (max-width: 1126px) {
   .boxes {
     justify-content: center;
@@ -467,6 +483,8 @@ color: hsla(207, 49%, 19%, 1);
     width: 27%;
   }
 }
+
+/*    max-width: 930px    */
 @media only screen and (max-width: 930px) {
   .box-content h4, .box-content h5, .box-content p {
     font-size: 0.9rem;
@@ -480,15 +498,14 @@ color: hsla(207, 49%, 19%, 1);
   }
 }
 
-
+/*    max-width: 645px    */
 @media only screen and (max-width: 645px) {
   .box {
     width: 70%;
   }
 }
-
-@media only screen and (max-width: 510px) {
-
+/*    max-width: 480px    */
+@media only screen and (max-width: 480px) {
   .courses {
     background-color: hsla(360, 100%, 100%, 1);
     width: 100%;
@@ -537,69 +554,69 @@ color: hsla(207, 49%, 19%, 1);
 }
 
 
-/*    Exhibit Section  */
-
+/*    Exhibit Section   */
 .exhibit h2 {
-padding: 2rem 0;
-align-self: center;
+  padding: 2rem 0;
+  align-self: center;
 }
 .thesis {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-  /* Left Section */
+/*    Left Section    */
 .thesis-left {
-width: 60%;
-height: 100%;
-padding: 0 1.5rem 2rem 1.5rem;
+  width: 60%;
+  height: 100%;
+  padding: 0 1.5rem 2rem 1.5rem;
 }
 video {
-margin: 0 1.5rem 1.5rem 1.5rem;
-width: 100%;
-height: auto;
-align-self: center;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  width: 100%;
+  height: auto;
+  align-self: center;
 }
 .thesis-left h3 {
-margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 .thesis-left p {
-padding: 1rem 2rem 0 0;
-color: hsla(203, 31%, 57%, 1);
+  padding: 1rem 2rem 0 0;
+  color: hsla(203, 31%, 57%, 1);
 }
 
     /* Right Section */
 .thesis-right {
-width: 40%;
-height: 100%;
-align-self: flex-start;
-margin-top: 1rem;
+  width: 40%;
+  height: 100%;
+  align-self: flex-start;
+  margin-top: 1rem;
 }
 .thesis-box img {
-width: 35%;
-height: auto;
-margin: 1rem 1rem;
-border: 0.2rem solid hsla(360, 100%, 100%, 1);
+  width: 35%;
+  height: auto;
+  margin: 1rem 1rem;
+  border: 0.2rem solid hsla(360, 100%, 100%, 1);
 }
-
 .thesis-box {
   border: 1px solid hsla(203, 31%, 57%, 1);
-  }
-  .thesis-box p {
-    color: hsla(208, 50%, 19%, 1);
-    padding-top: 1rem;
-    }
+}
+.thesis-box p {
+  color: hsla(208, 50%, 19%, 1);
+  padding-top: 1rem;
+}
 .thesis-box:hover {
   background-color: hsla(203, 31%, 57%, 1);
-  }
+}
 .thesis-box:active {
   position: relative;
   top: 0.1rem; 
 } 
 .thesis-box-content {
-width: 65%;
+  width: 65%;
 }
 /*    Media Screens for Thesis    */
+
+/*    max-width: 930px    */
 @media only screen and (max-width: 930px) {
   .thesis-box-content h3 {
     font-size: 1.1rem;
@@ -609,7 +626,8 @@ width: 65%;
   }
 }
 
-@media only screen and (max-width: 510px) {
+/*    max-width: 480px    */
+@media only screen and (max-width: 480px) {
   .thesis-right, .thesis-left h3, .thesis-left p {
     display: none;
   }
@@ -638,6 +656,7 @@ footer div a {
   text-decoration: none;
   color: hsla(207, 49%, 19%, 1);
 }
+/*    Media screens for footer    */
 @media only screen and (max-width: 510px) {
   footer div {
     margin-top: 1.5rem;
